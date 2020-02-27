@@ -54,12 +54,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'mb$p*o@+73v$ft0cg4%563wv*vvq7ewnpu98c4@p6+bdpd&fc2'
+# SECRET_KEY = 'mb$p*o@+73v$ft0cg4%563wv*vvq7ewnpu98c4@p6+bdpd&fc2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 
+ALLOWED_HOSTS='.localhost','.herokuapp.com','.127.0.0.1'
 
 # Application definition
 
@@ -164,3 +165,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
+# django_heroku.settings(locals())
