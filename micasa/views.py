@@ -6,7 +6,7 @@ from django.contrib import messages
 from . forms import *
 from django.contrib.auth.models import User
 
-# Create your views here.
+# Create  your views here.
 # Views for hood
 @login_required(login_url='/accounts/login/')
 def home(request):
